@@ -5,10 +5,10 @@
  */
 export const arrayChunker = (inputArray = [], chunkSize = 10) => {
     if(inputArray.length === 0) {
-        return []
+        return [[]]
     }
     else if(inputArray.length <= chunkSize) {
-        return inputArray
+        return [inputArray]
     } else {
         return inputArray.reduce((resultArray, item, index) => { 
             
