@@ -1,28 +1,29 @@
 /*
- *  params: inputArray, chunkSize
- *  defaults: inputArray = [], chunkSize = 10
+ *  params: kvArray, chunkSize
+ *  defaults: kvArray = [], chunkSize = 10
  *  return: [[], [], [], ...]
  */
-export const arrayChunker = (inputArray = [], chunkSize = 10) => {
-    if(inputArray.length === 0) {
+export const chunkify = (kvArray = [], chunkSize = 10) => {
+    if(kvArray.length === 0) {
         return [[]]
     }
-    else if(inputArray.length <= chunkSize) {
-        return [inputArray]
+    else if(kvArray.length <= chunkSize) {
+        return [kvArray]
     } else {
-        return inputArray.reduce((resultArray, item, index) => { 
+        return kvArray.reduce((agg, curr, index) => { 
+         
+            const chunkIndex = Math.floor(index / chunkSize)
             
-            const chunkIndex = Math.floor(index/chunkSize)
-          
-            if(!resultArray[chunkIndex]) {
-              resultArray[chunkIndex] = [] // start a new chunk
+            if(!agg[chunkIndex]) {
+              agg[chunkIndex] = [] // create a new chunk
             }
+         
+            agg[chunkIndex].push(curr)
+            
+            return agg
           
-            resultArray[chunkIndex].push(item)
-          
-            return resultArray
-          }, [])
+        }, [])
     }
 }
 
-export default arrayChunker
+export default chunkify
