@@ -6,12 +6,12 @@
 
 export const sortYearMonths = kvSet => {
 
-    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]	
+    const months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]	
     /* Sorting payments months names using index of sample array
-     * To avoid sort function negative result (0-1 => -1), added 1 so indexOf("January") 
-     * will be 0 to 1 and indexOf("February") will be 1 to 2	
+     * To avoid sort function negative result (0-1 => -1), added 1 so indexOf("january") 
+     * will be 0 to 1 and indexOf("jebruary") will be 1 to 2	
     */
-    return Array.from(kvSet).sort((a,b) => months.indexOf(a) + 1 - months.indexOf(b) + 1)
+    return Array.from(kvSet).sort((a, b) => months.indexOf(a.toLowerCase()) + 1 - months.indexOf(b.toLowerCase()) + 1)
     
 }
 
