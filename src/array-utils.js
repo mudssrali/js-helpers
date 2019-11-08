@@ -1,4 +1,7 @@
 /*
+ *  description: takes a single array, breaks it into chunks of size chunkSize
+ *               and returns an array of arrays of max length chunkSize
+ * 
  *  params: kvArray, chunkSize
  *  defaults: kvArray = [], chunkSize = 10
  *  return: [[], [], [], ...]
@@ -7,10 +10,12 @@ export const chunkify = (kvArray = [], chunkSize = 10) => {
     if(kvArray.length === 0) {
         return [[]]
     }
-    else if(kvArray.length <= chunkSize) {
+
+    if(kvArray.length <= chunkSize) {
         return [kvArray]
-    } else {
-        return kvArray.reduce((agg, curr, index) => { 
+    }
+    
+    return kvArray.reduce((agg, curr, index) => { 
          
             const chunkIndex = Math.floor(index / chunkSize)
             
@@ -23,7 +28,6 @@ export const chunkify = (kvArray = [], chunkSize = 10) => {
             return agg
           
         }, [])
-    }
 }
 
 export default chunkify
