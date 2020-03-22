@@ -9,13 +9,13 @@
  * prettifyNumber(5000) => 5,000
  * prettifyNumber(5000000) => 5,000,000
  * prettifyNumber(3.2) => 3.200
- *     - Assuming process.env.REACT_APP_VALUE_DECIMAL_PLACES === 3
+ *     - Assuming DECIMAL_PLACES === 3
  */
 export function prettifyNumber(n) {
 	if (isFloat(n)) {
 		return n.toLocaleString('en-US', {
-			minimumFractionDigits: process.env.REACT_APP_VALUE_DECIMAL_PLACES,
-			maximumFractionDigits: process.env.REACT_APP_VALUE_DECIMAL_PLACES,
+			minimumFractionDigits: DECIMAL_PLACES,
+			maximumFractionDigits: DECIMAL_PLACES,
 		});
 	} else {
 		return n.toLocaleString('en-US');
