@@ -2,7 +2,8 @@
 
 ES6 utilities for personal usage
 
-- [chunkify(kvArray = [], chunkSize = 10, reverse = false): [[]]](./src/array-utils.js)
+- [chunkify(kvArray = [], chunkSize = 10, reverse = false): Array<[]>](./src/chunkify.js)
+- [chunkify2(kvArray = [], chunkSize = 10):Array<[]>](./src/chunkify2.js)
 - [isDecimalNumber(number: any): boolean](./src/typeTeller.js)
 - [toTitleCase(text: string,  split_by: string): string](./src/toTitleCase.js)
 - [randomColorGenerator(): string](./src/randomColorGenerator.js)
@@ -12,6 +13,6 @@ ES6 utilities for personal usage
 - [isFloat(value): boolean](./src/typeTeller.js)
 - [prettifyNumber(number): string](./src/prettifyNumber.js)
 
-  Prettify a number for use in this application. Use toLocaleString, but also force a standard number of decimal places if it's a float.
+  Prettify a number for use in the application. Use toLocaleString, but also force a standard number of decimal places if it's a float.
 
 [MIT-LICENSE](./LICENSE)
