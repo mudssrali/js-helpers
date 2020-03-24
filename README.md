@@ -2,7 +2,7 @@
 
 Some hand-crafted ES6 based utils.
 
-- Split Array into Chunks
+- **Split Array into Chunks**
 
    ```javascript
     chunkify(kvArray = [], chunkSize = 10, reverse = false): Array<[]>
@@ -10,7 +10,7 @@ Some hand-crafted ES6 based utils.
 
   [View Code](./src/chunkify.js)
 
-- Split Array into Chunks - V2
+- **Split Array into Chunks** - V2
 
    ```javascript
     chunkify(kvArray = [], chunkSize = 10): Array<[]>
@@ -18,7 +18,7 @@ Some hand-crafted ES6 based utils.
 
   [View Code](./src/chunkify2.js)
 
-- Check number
+- **Check number**
 
   ```javascript
     isDecimalNumber(number: any): boolean
@@ -27,7 +27,7 @@ Some hand-crafted ES6 based utils.
 
   [View Code](./src/typeTeller.js)
 
-- Convert text to Titled-Case
+- **Convert text to Titled-Case**
 
   ```javascript
     toTitleCase(text: string,  split_by: string): string
@@ -37,7 +37,7 @@ Some hand-crafted ES6 based utils.
   
   [View Code](./src/toTitleCase.js)
 
-- Prettify Number
+- **Prettify Number**
   
   **Description**: Prettify a number for use in the application. Use toLocaleString, but also force a standard number of decimal places if it's a float.
 
@@ -47,7 +47,7 @@ Some hand-crafted ES6 based utils.
 
   [View Code](./src/prettifyNumber.js)
 
-- Random Color Code Generator
+- **Random Color Code Generator**
 
   ```javascript
     randomColorGenerator(): string
@@ -55,7 +55,7 @@ Some hand-crafted ES6 based utils.
 
   [View Code](./src/randomColorGenerator.js)
 
-- Bump Array Sort
+- **Bump Array Sort**
   **Description**: Return a new sorted array, except with one value bumped to the front. This function does not sort an array in place; a new array is returned.
 
   ```javascript
@@ -64,7 +64,7 @@ Some hand-crafted ES6 based utils.
 
   [View Code](./src/bumpSort.js)
 
-- Sort Year Months
+- **Sort Year Months**
 
   ```javascript
     sortYearMonths(kvSet: Set<string>): Array
