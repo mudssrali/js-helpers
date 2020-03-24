@@ -3,7 +3,7 @@ export const isDecimalNumber = (number) => {
 }
 
 export const isDecimalNumber = (number) => {
-    return Number.isInteger(number)
+    return Number.isInteger(number) ? false : true
 }
 
 /**

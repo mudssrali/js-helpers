@@ -2,67 +2,76 @@
 
 Some hand-crafted ES6 based utils.
 
-- [Split Array into Chunks](./src/chunkify.js)
+- Split Array into Chunks
 
    ```javascript
     chunkify(kvArray = [], chunkSize = 10, reverse = false): Array<[]>
    ```
 
-  [View Source Code](./src/chunkify.js)
+  [View Code](./src/chunkify.js)
 
-- [Split Array into Chunks](./src/chunkify2.js) - V2
+- Split Array into Chunks - V2
 
    ```javascript
     chunkify(kvArray = [], chunkSize = 10): Array<[]>
    ```
-  [View Source Code](./src/chunkify2.js)
 
-- [Check number](./src/typeTeller.js)
+  [View Code](./src/chunkify2.js)
+
+- Check number
 
   ```javascript
     isDecimalNumber(number: any): boolean
     isFloat(value: any): boolean
   ```
-  [View Source Code](./src/typeTeller.js)
 
-- [Convert text to Titled-Case](./src/toTitleCase.js)
+  [View Code](./src/typeTeller.js)
+
+- Convert text to Titled-Case
 
   ```javascript
     toTitleCase(text: string,  split_by: string): string
   ```
-  [View Source Code](./src/toTitleCase.js)
 
-- [Prettify Number](./src/prettifyNumber.js)
+  > e.g. toTitleCase("mUdAssaAr lOve OpEn SouRCe") ===========> Mudassar Love Open Source
+  
+  [View Code](./src/toTitleCase.js)
+
+- Prettify Number
   
   **Description**: Prettify a number for use in the application. Use toLocaleString, but also force a standard number of decimal places if it's a float.
 
   ```javascript
     prettifyNumber(number): string
   ```
-  [View Source Code](./src/prettifyNumber.js)
 
-- [Random Color Code Generator](./src/randomColorGenerator.js)
+  [View Code](./src/prettifyNumber.js)
+
+- Random Color Code Generator
 
   ```javascript
     randomColorGenerator(): string
   ```
-  [View Source Code](./src/randomColorGenerator.js)
 
-- [Bump Sort](./src/bumpSort.js)
+  [View Code](./src/randomColorGenerator.js)
+
+- Bump Array Sort
   **Description**: Return a new sorted array, except with one value bumped to the front. This function does not sort an array in place; a new array is returned.
 
   ```javascript
     bumpSort(kvArray: Array, bumpValue: any): Array
   ```
-  [View Source Code](./src/bumpSort.js)
 
-- [Sort Year Months](./src/sortYearMonths.js)
+  [View Code](./src/bumpSort.js)
+
+- Sort Year Months
 
   ```javascript
     sortYearMonths(kvSet: Set<string>): Array
     sortYearMonths(kvArray: Array<string>): Array
   ```
-  [View Source Code](./src/sortYearMonths.js)
+
+  [View Code](./src/sortYearMonths.js)
 
 ## Contributions
 
