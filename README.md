@@ -13,7 +13,7 @@ Some hand-crafted ES6 based utils.
 - [Split Array into Chunks](./src/chunkify2.js) - V2
 
    ```javascript
-    chunkify(kvArray = [], chunkSize = 10, reverse = false): Array<[]>
+    chunkify(kvArray = [], chunkSize = 10): Array<[]>
    ```
   [View Source Code](./src/chunkify2.js)
 
