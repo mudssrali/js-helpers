@@ -12,34 +12,14 @@ export const sortYearMonths = (kvSet: Set<string>) => {
      * will be 0 to 1 and indexOf("jebruary") will be 1 to 2	
     */
     return Array.from(kvSet).sort((a, b) => months.indexOf(a.toLowerCase()) + 1 - months.indexOf(b.toLowerCase()) + 1)
-
 }
 
 export const sortYearMonths = (kvArray: Array<string>) => {
 
     const months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
-    /* Sorting payments months names using index of sample array
+    /*
      * To avoid sort function negative result (0-1 => -1), added 1 so indexOf("january") 
      * will be 0 to 1 and indexOf("jebruary") will be 1 to 2	
     */
     return kvArray.sort((a, b) => months.indexOf(a.toLowerCase()) + 1 - months.indexOf(b.toLowerCase()) + 1)
-}
-
-/**
- * Return a new sorted array, except with one value bumped to the front. This
- * function does not sort an array in place; a new array is returned.
- *
- * For example:
- *
- * > bumpSort(['group B', 'group A', 'group C', 'control'], 'control');
- * ['control', 'group A', 'group B', 'group C']
- */
-export function bumpSort(arr, valueToBump) {
-    const arrCopy = arr.slice();
-    const valueIndex = arrCopy.indexOf(valueToBump);
-
-    if (valueIndex === -1) return arrCopy.sort();
-
-    const arrOfBumped = arrCopy.splice(valueIndex, 1);
-    return arrOfBumped.concat(arrCopy.sort());
 }
