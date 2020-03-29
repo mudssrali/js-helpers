@@ -71,7 +71,16 @@ Some hand-crafted ES6 based utils.
     sortYearMonths(kvArray: Array<string>): Array
   ```
 
-  [View Code](./src/sortYearMonths.js)
+  [View Code](./src/arrayUtils.ts)
+
+- **Array Utils**
+
+  ```javascript
+    isEqual(array1: Array<any>, array2: Array<any>): boolean
+    takeRight(array: Array<any>, n: number): Array<any>
+  ```
+
+  [View Code](./src/arrayUtils.ts)
 
 ## Contributions
 
