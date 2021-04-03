@@ -1,6 +1,6 @@
 # JavaScript Helpers
 
-Some hand-crafted ES6 based javascript (type guarded - [TypeScript](https://github.com/mudssrali/typescript-cheatsheet) based) utility functions:
+Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://github.com/mudssrali/typescript-cheatsheet) based) utility functions:
 
 - **Split Array into Chunks**
 
@@ -30,10 +30,10 @@ Some hand-crafted ES6 based javascript (type guarded - [TypeScript](https://gith
 - **Convert text to Titled-Case**
 
   ```javascript
-    toTitleCase(text: string,  split_by: string): string
+    toTitleCase(text: string,  delimiter: string): string
   ```
 
-  > e.g. toTitleCase("mUdAssaAr lOve OpEn SouRCe") ===========> Mudassar Love Open Source
+  > e.g. toTitleCase("mUdAssaAr lOves OpEn SouRCe") ===========> Mudassar Loves Open Source
   
   [View Code](./src/toTitleCase.js)
 
