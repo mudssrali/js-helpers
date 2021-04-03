@@ -71,7 +71,7 @@ Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://gith
     sortYearMonths(kvArray: Array<string>): Array
   ```
 
-  [View Code](./src/arrayUtils.ts)
+  [View Code](./src/sortYearMonths.js)
 
 - **Array Utils**
 

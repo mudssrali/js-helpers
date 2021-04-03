@@ -4,7 +4,7 @@
  * return: sorted year months []
  */
 
-export const sortYearMonths = (kvSet: Set<string>) => {
+export const sortYearMonths = (kvSet) => {
 
     const months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
     /* Sorting payments months names using index of sample array
@@ -14,7 +14,7 @@ export const sortYearMonths = (kvSet: Set<string>) => {
     return Array.from(kvSet).sort((a, b) => months.indexOf(a.toLowerCase()) + 1 - months.indexOf(b.toLowerCase()) + 1)
 }
 
-export const sortYearMonths = (kvArray: Array<string>) => {
+export const sortYearMonths = (kvArray) => {
 
     const months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
     /*
