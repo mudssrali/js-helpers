@@ -1,6 +1,6 @@
-# JavaScript Utils (ES6)
+# JavaScript - Typescript helper-functions
 
-Some hand-crafted ES6 based utils.
+Some hand-crafted ES6 based utility functions:
 
 - **Split Array into Chunks**
 
