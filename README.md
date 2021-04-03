@@ -1,6 +1,6 @@
-# JavaScript - Typescript helper-functions
+# JavaScript Helpers
 
-Some hand-crafted ES6 based utility functions:
+Some hand-crafted ES6 based javascript (type guarded - [TypeScript](https://github.com/mudssrali/typescript-cheatsheet) based) utility functions:
 
 - **Split Array into Chunks**
 
