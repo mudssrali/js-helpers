@@ -17,6 +17,14 @@ Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://gith
    ```
 
   [View Code](./src/chunkify2.js)
+  
+- **Split Array into Chunks** - V3
+
+   ```javascript
+    chunkify(kvArray: T[], chunkSize: number): Array<T[]>
+   ```
+
+  [View Code](./src/chunkify3.ts)
 
 - **Check number**
 
