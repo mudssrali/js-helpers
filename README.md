@@ -96,6 +96,14 @@ Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://gith
     formatFileSize(bytes: number, suffixIndex = 0): string
   ```
 
+  [View Code](./src/kebabToTitleCase.js)
+
+- **Kebab Case to Title Case**
+
+  ```javascript
+    kebabToTitleCase(str: string): string
+  ```
+
   [View Code](./src/formatFileSize.js)
 
 ## Contributions
