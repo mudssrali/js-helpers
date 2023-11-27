@@ -2,9 +2,17 @@
 
 Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://github.com/mudssrali/typescript-cheatsheet) based) utility functions:
 
+- **String utils**
+  ```ts
+    isValidLength(str: string, minLength: number)
+    isValidEmail(email: string)
+  ```
+
+  [View Code](./src/string.ts)
+
 - **Split Array into Chunks**
 
-   ```javascript
+   ```js
     chunkify(kvArray = [], chunkSize = 10, reverse = false): Array<[]>
    ```
 
@@ -12,7 +20,7 @@ Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://gith
 
 - **Split Array into Chunks** - V2
 
-   ```javascript
+   ```js
     chunkify(kvArray = [], chunkSize = 10): Array<[]>
    ```
 
@@ -20,7 +28,7 @@ Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://gith
   
 - **Split Array into Chunks** - V3
 
-   ```javascript
+   ```js
     chunkify(kvArray: T[], chunkSize: number): Array<T[]>
    ```
 
@@ -28,7 +36,7 @@ Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://gith
 
 - **Check number**
 
-  ```javascript
+  ```js
     isDecimalNumber(number: any): boolean
     isFloat(value: any): boolean
   ```
@@ -37,7 +45,7 @@ Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://gith
 
 - **Convert text to Titled-Case**
 
-  ```javascript
+  ```js
     toTitleCase(text: string,  delimiter = ' '): string
   ```
 
@@ -49,7 +57,7 @@ Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://gith
   
   **Description**: Prettify a number for use in the application. Use toLocaleString, but also force a standard number of decimal places if it's a float.
 
-  ```javascript
+  ```js
     prettifyNumber(number): string
   ```
 
@@ -57,7 +65,7 @@ Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://gith
 
 - **Random Color Code Generator**
 
-  ```javascript
+  ```js
     randomColorGenerator(): string
   ```
 
@@ -66,7 +74,7 @@ Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://gith
 - **Bump Array Sort**
   **Description**: Return a new sorted array, except with one value bumped to the front. This function does not sort an array in place; a new array is returned.
 
-  ```javascript
+  ```js
     bumpSort(kvArray: Array, bumpValue: any): Array
   ```
 
@@ -74,7 +82,7 @@ Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://gith
 
 - **Sort Year Months**
 
-  ```javascript
+  ```js
     sortYearMonths(kvSet: Set<string>): Array
     sortYearMonths(kvArray: Array<string>): Array
   ```
@@ -83,7 +91,7 @@ Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://gith
 
 - **Array Utils**
 
-  ```javascript
+  ```js
     isEqual(array1: Array<any>, array2: Array<any>): boolean
     takeRight(array: Array<any>, n: number): Array<any>
   ```
@@ -92,7 +100,7 @@ Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://gith
 
 - **Format File Size**
 
-  ```javascript
+  ```js
     formatFileSize(bytes: number, suffixIndex = 0): string
   ```
 
@@ -100,7 +108,7 @@ Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://gith
 
 - **Kebab Case to Title Case**
 
-  ```javascript
+  ```js
     kebabToTitleCase(str: string): string
   ```
 
