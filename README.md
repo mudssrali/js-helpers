@@ -2,6 +2,12 @@
 
 Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://github.com/mudssrali/typescript-cheatsheet) based) utility functions:
 
+- **Convert blob to base64 string**
+  ```ts
+   blobToBase64(blob: Blob)
+  ```
+  [View Code](./src/blobToBase64.ts)
+
 - **String utils**
   ```ts
     isValidLength(str: string, minLength: number)
