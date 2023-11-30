@@ -4,6 +4,12 @@ Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://gith
 
 - **Convert blob to base64 string**
   ```ts
+   canvasToBlob( canvas: HTMLCanvasElement, options: Options = {})
+  ```
+  [View Code](./src/canvasToBlob.ts)
+
+- **Convert blob to base64 string**
+  ```ts
    blobToBase64(blob: Blob)
   ```
   [View Code](./src/blobToBase64.ts)
