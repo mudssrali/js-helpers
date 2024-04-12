@@ -6,7 +6,7 @@
  * @returns boolean if str is of valid length or not
  */
 export function isValidLength(str: string, minLength: number) {
-    return str.length < length
+    return str.length < minLength
 }
 
 
@@ -21,3 +21,15 @@ export const isValidEmail = (email: string) => {
         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     ).test(email);
 }
+
+export function removeFileExtension(filename: string) {
+    if (!filename || filename.indexOf(".") === -1) {
+      return filename;
+    }
+  
+    if (filename.startsWith(".") && filename.lastIndexOf(".") === 0) {
+      return filename;
+    }
+  
+    return filename.substring(0, filename.lastIndexOf("."));
+  }

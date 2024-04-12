@@ -18,6 +18,7 @@ Some hand-crafted ES6 based JavaScript (type guarded - [TypeScript](https://gith
   ```ts
     isValidLength(str: string, minLength: number)
     isValidEmail(email: string)
+    removeFileExtension(filename: string)
   ```
 
   [View Code](./src/string.ts)
